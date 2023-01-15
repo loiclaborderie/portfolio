@@ -80,7 +80,11 @@ function Projets() {
           </Col>
         </Row>
       </Container>
-      <img src={colorSharp2} alt="image-background" />
+      <img
+        src={colorSharp2}
+        className="background-image-right"
+        alt="image-background"
+      />
     </section>
   );
 }

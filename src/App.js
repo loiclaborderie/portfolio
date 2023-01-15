@@ -5,6 +5,9 @@ import Banner from "./components/Banner";
 import Projets from "./components/Projets";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Competences from "./components/Competences";
+import Fonts from "./components/Fonts";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       <Banner />
       <Competences />
       <Projets />
+      <Contact />
+      <Fonts />
+      <Footer />
     </div>
   );
 }

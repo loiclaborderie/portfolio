@@ -9,11 +9,11 @@ function Contact() {
     prenom: "",
     nom: "",
     email: "",
-    téléphone: "",
+    telephone: "",
     message: "",
   };
   const [formDetails, setFormDetails] = useState(formInitial);
-  const [buttonText, setButtonText] = useState("Send");
+  const [buttonText, setButtonText] = useState("Envoyer");
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -23,7 +23,30 @@ function Contact() {
     });
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setButtonText("Envoi...");
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(formDetails),
+    });
+    let result = await response.json();
+    setFormDetails(formInitial);
+    if (result.code === 200) {
+      setStatus({
+        success: true,
+        message: "Votre message a été envoyé avec succès",
+      });
+    } else {
+      setStatus({
+        success: false,
+        message: "Il y a eu une erreur lors de l'envoi du message",
+      });
+    }
+  };
 
   return (
     <section className="contact" id="connect">
@@ -63,9 +86,9 @@ function Contact() {
                 <Col sm={6} className="px-1">
                   <input
                     type="tel"
-                    value={formDetails.téléphone}
+                    value={formDetails.telephone}
                     placeholder="Téléphone"
-                    onChange={(e) => onFormUpdate("téléphone", e.target.value)}
+                    onChange={(e) => onFormUpdate("telephone", e.target.value)}
                   />
                 </Col>
                 <Col>
@@ -79,18 +102,16 @@ function Contact() {
                     <span>{buttonText}</span>
                   </button>
                 </Col>
-                {status.message && (
-                  <Col>
-                    <p
-                      className={
-                        status.success === false ? "danger" : "success"
-                      }
-                    >
-                      {status.message}
-                    </p>
-                  </Col>
-                )}
               </Row>
+              {status.message && (
+                <Col className="sentOrNot">
+                  <p
+                    className={status.success === false ? "danger" : "success"}
+                  >
+                    {status.message}
+                  </p>
+                </Col>
+              )}
             </form>
           </Col>
         </Row>

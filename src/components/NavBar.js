@@ -45,9 +45,9 @@ function NavBar() {
             Menu
           </Nav.Link>
           <Nav.Link
-            href="#features"
+            href="#skills"
             className={
-              activeLink === "features" ? "active navbar-link" : "navbar-link"
+              activeLink === "skills" ? "active navbar-link" : "navbar-link"
             }
             onClick={() => onUpdateActiveLink("features")}
           >
@@ -81,7 +81,7 @@ function NavBar() {
               console.log("test");
             }}
           >
-            <span>Let's connect</span>
+            <span>Me contacter</span>
           </button>
         </span>
       </Container>

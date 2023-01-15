@@ -13,6 +13,7 @@
   src: url(./assets/font/CentraNo2-Book.ttf);
   font-weight: 400;
 }
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap");
 /* css par defaut */
 * {
   margin: 0;
@@ -41,6 +42,13 @@ h4,
 h5,
 h6 {
   line-height: normal;
+}
+p.success {
+  color: #121212;
+}
+
+p.danger {
+  color: red;
 }
 .nav-container {
   width: 100%;
@@ -159,6 +167,14 @@ span.navbar-text {
   .nav-link.navbar-link {
     display: none;
   }
+  .footer .col-sm-6 {
+    display: flex;
+    justify-content: center;
+    padding-block: 1rem;
+  }
+  .footer .social-icons > * {
+    padding-inline: 1rem;
+  }
 }
 
 .banner {
@@ -256,11 +272,11 @@ p.wrap {
 }
 
 /* Competences  */
-.skill {
+.skills {
   padding-bottom: 3.5rem;
   position: relative;
 }
-.skill-bx {
+.skill-box {
   background: #151515;
   border-radius: 64px;
   text-align: center;
@@ -310,6 +326,9 @@ p.wrap {
 .projects {
   padding: 80px 0;
   position: relative;
+  outline: 1px solid green;
+}
+.projects > * {
   outline: 1px solid green;
 }
 .projects h2 {
@@ -432,7 +451,175 @@ p.wrap {
   right: 0;
   z-index: -4;
 }
+.background-image-two {
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+}
 
+/* Fonts */
+
+#text p,
+#text .fancy {
+  color: white;
+  font-size: 6vw;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+}
+#text {
+  max-width: 60%;
+  margin: 100px auto;
+}
+.line {
+  display: flex;
+  justify-content: space-between;
+}
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+  opacity: 0.2;
+}
+.fancy {
+  text-decoration: none;
+}
+.fancy > .letter {
+  display: inline-block;
+  transition: transform 350ms cubic-bezier(0.29, 0.57, 0.62, 1.41);
+}
+.fancy:hover > .letter {
+  transition-duration: 800ms;
+}
+.fancy:hover > .letter:nth-child(1) {
+  transform: translate(-80%, 60%) rotate(8deg);
+}
+.fancy:hover > .letter:nth-child(2) {
+  transform: translate(-60%, 20%) rotate(4deg);
+}
+.fancy:hover > .letter:nth-child(3) {
+  transform: translate(-20%, 60%) rotate(-6deg);
+}
+.fancy:hover > .letter:nth-child(4) {
+  transform: translate(0%, 8%) rotate(-8deg);
+}
+.fancy:hover > .letter:nth-child(5) {
+  transform: translate(0%, -20%) rotate(5deg);
+}
+.fancy:hover > .letter:nth-child(6) {
+  transform: translate(0%, 20%) rotate(-3deg);
+}
+.fancy:hover > .letter:nth-child(7) {
+  transform: translate(10%, 40%) rotate(-15deg);
+}
+.fancy:hover > .letter:nth-child(8) {
+  transform: translate(10%, 20%) rotate(30deg);
+}
+
+/* Contact */
+.contact {
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  padding: 60px 0 200px 0;
+}
+.contact img {
+  max-width: 92%;
+}
+.contact h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  outline: none;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+.contact form input:focus,
+.contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
+.contact form input:focus::placeholder,
+.contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+.contact form button {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 0.9rem 3.1rem;
+  font-size: 1.1rem;
+  margin-top: 1.4rem;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.contact form button span {
+  z-index: 1;
+  position: relative;
+}
+.contact form button:hover {
+  color: #fff;
+}
+.contact form button::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.contact form button:hover::before {
+  width: 100%;
+}
+.sentOrNot {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/* Footer */
+.footer {
+  padding: 3rem 0 2rem 0;
+  background-image: url("./assets/img/footer-bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer .logo {
+  width: 26%;
+}
+.footer p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #b8b8b8;
+  letter-spacing: 0.5px;
+  margin-top: 2rem;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
 /* nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
   outline: none;
