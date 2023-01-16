@@ -40,12 +40,12 @@ function Projets() {
         <Row>
           <Col>
             <h2>Projets</h2>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
               repellat error cupiditate corrupti hic, tempore saepe laborum quas
               perferendis, accusantium ratione. Eveniet, dolorem debitis? A,
               nisi! Iure quisquam voluptates ullam!
-            </p>
+            </p> */}
             <Tab.Container id="project-tabs" defaultActiveKey="first">
               <Nav
                 className="justify-content-center align-center mb-5"

@@ -139,7 +139,8 @@ span.navbar-text {
   background-color: transparent;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button span {
+.navbar-text button a {
+  text-decoration: none;
   z-index: 1;
 }
 .navbar-text button::before {
@@ -153,7 +154,7 @@ span.navbar-text {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button:hover {
+.navbar-text button:hover #contactConnect {
   color: #121212;
 }
 .navbar-text button:hover::before {
@@ -235,6 +236,10 @@ p.wrap {
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
+}
+.banner button a {
+  color: white;
+  text-decoration: none;
 }
 .banner button:hover svg {
   margin-left: 25px;
@@ -326,10 +331,6 @@ p.wrap {
 .projects {
   padding: 80px 0;
   position: relative;
-  outline: 1px solid green;
-}
-.projects > * {
-  outline: 1px solid green;
 }
 .projects h2 {
   font-size: 3rem;
@@ -464,12 +465,12 @@ p.wrap {
 #text p,
 #text .fancy {
   color: white;
-  font-size: 6vw;
+  font-size: 7vw;
   text-transform: uppercase;
   font-family: "Rubik", sans-serif;
 }
 #text {
-  max-width: 60%;
+  max-width: 80%;
   margin: 100px auto;
 }
 .line {

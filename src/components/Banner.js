@@ -55,15 +55,14 @@ function Banner() {
               <p className="wrap">Développeur {text}</p>
             </h1>
             <p className="description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-              laborum voluptatum sequi c.
+              Développeur web junior avec une passion pour la création de sites
+              web intuitifs et une forte volonté d'apprendre et d'évoluer dans
+              le domaine.
             </p>
-            <button
-              onClick={() => {
-                console.log("test");
-              }}
-            >
-              Let's Connect <ArrowRightCircle size={25} />
+            <button>
+              <a href="#connect">
+                Me contacter <ArrowRightCircle size={25} />
+              </a>
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>

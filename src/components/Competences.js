@@ -42,10 +42,9 @@ function Competences() {
             <div className="skill-box">
               <h2>Compétences</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-                ipsa, iusto excepturi inventore ducimus ipsam minus magnam
-                doloribus nam maiores laboriosam. Reprehenderit doloremque
-                debitis voluptate architecto adipisci sit, enim hic?
+                Voici mes compétences actuelles, j'ai une forte volonté
+                d'apprendre de nouvelles technologies et compétences pour
+                devenir un développeur web compétent.
               </p>
               <Carousel
                 responsive={responsive}
