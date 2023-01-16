@@ -57,7 +57,11 @@ function Contact() {
           </Col>
           <Col md={6}>
             <h2>Rentrons en contact</h2>
-            <form name="contact" data-netlify="true" onSubmit="submit">
+            <form
+              name="contact"
+              method="post"
+              // onSubmit={handleSubmit}
+            >
               <Row>
                 <Col sm={6} className="px-1">
                   <input type="hidden" name="form-name" value="contact" />
