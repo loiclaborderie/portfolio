@@ -74,7 +74,7 @@ function NavBar() {
             <a href="mailto:loiclaborderie@gmail.com">
               <img src={navIcon2} alt="icone" />
             </a>
-            <a href="https://github.com/loiclaborderie">
+            <a target="_blank" href="https://github.com/loiclaborderie">
               <img src={navIcon3} alt="icone" />
             </a>
           </div>

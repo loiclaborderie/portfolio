@@ -57,10 +57,12 @@ function Contact() {
           </Col>
           <Col md={6}>
             <h2>Rentrons en contact</h2>
-            <form onSubmit={handleSubmit}>
+            <form name="contact" onSubmit={handleSubmit}>
               <Row>
                 <Col sm={6} className="px-1">
+                  <input type="hidden" name="form-name" value="contact" />
                   <input
+                    name="firstName"
                     type="text"
                     value={formDetails.prenom}
                     placeholder="Prénom"
@@ -69,6 +71,7 @@ function Contact() {
                 </Col>
                 <Col sm={6} className="px-1">
                   <input
+                    name="lastName"
                     type="text"
                     value={formDetails.nom}
                     placeholder="Nom"
@@ -77,6 +80,7 @@ function Contact() {
                 </Col>
                 <Col sm={6} className="px-1">
                   <input
+                    name="email"
                     type="email"
                     value={formDetails.email}
                     placeholder="Email"
@@ -85,6 +89,7 @@ function Contact() {
                 </Col>
                 <Col sm={6} className="px-1">
                   <input
+                    name="telephone"
                     type="tel"
                     value={formDetails.telephone}
                     placeholder="Téléphone"
@@ -93,6 +98,7 @@ function Contact() {
                 </Col>
                 <Col>
                   <textarea
+                    name="message"
                     rows="6"
                     value={formDetails.message}
                     placeholder="Message"

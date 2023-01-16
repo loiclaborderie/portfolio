@@ -19,7 +19,12 @@ function Fonts() {
           <div class="line">
             <p class="word">voir</p>
             <p class="word">mon</p>
-            <a class="word fancy" id="github" href="#" target="_blank">
+            <a
+              class="word fancy"
+              id="github"
+              href="https://github.com/loiclaborderie"
+              target="_blank"
+            >
               <span className="letter">g</span>
               <span className="letter">i</span>
               <span className="letter">t</span>
@@ -29,14 +34,23 @@ function Fonts() {
             </a>
           </div>
           <div class="line">
-            <a class="word fancy" id="mail" href="#" target="_blank">
+            <a
+              class="word fancy"
+              id="mail"
+              href="mailto:loiclaborderie@gmail.com"
+            >
               <span className="letter">e</span>
               <span className="letter">m</span>
               <span className="letter">a</span>
               <span className="letter">i</span>
               <span className="letter">l</span>
             </a>
-            <a class="word fancy" id="linkedin" href="#" target="_blank">
+            <a
+              class="word fancy"
+              id="linkedin"
+              href="https://www.linkedin.com/in/loic-laborderie-465422153/"
+              target="_blank"
+            >
               <span className="letter">l</span>
               <span className="letter">i</span>
               <span className="letter">n</span>
