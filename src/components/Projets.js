@@ -86,10 +86,14 @@ function Projets() {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                  <Row>lorem</Row>
+                  <Row className="moreToCome">
+                    <h4>Plus à venir dans le futur...</h4>
+                  </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
-                  <Row>lorem</Row>
+                  <Row className="moreToCome">
+                    <h4>Plus à venir dans le futur...</h4>
+                  </Row>
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
