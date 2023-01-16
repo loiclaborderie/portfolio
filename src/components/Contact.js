@@ -57,10 +57,10 @@ function Contact() {
           </Col>
           <Col md={6}>
             <h2>Rentrons en contact</h2>
-            <form name="contact" data-netlify="true" onSubmit={handleSubmit}>
+            <form name="contact" data-netlify="true" onSubmit="submit">
               <Row>
                 <Col sm={6} className="px-1">
-                  <input type="hidden" name="contact" value="contact" />
+                  <input type="hidden" name="form-name" value="contact" />
                   <input
                     name="firstName"
                     type="text"
