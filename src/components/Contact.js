@@ -23,29 +23,21 @@ function Contact() {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setButtonText("Envoi...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    let result = await response.json();
-    setFormDetails(formInitial);
-    if (result.code === 200) {
-      setStatus({
-        success: true,
-        message: "Votre message a été envoyé avec succès",
-      });
-    } else {
-      setStatus({
-        success: false,
-        message: "Il y a eu une erreur lors de l'envoi du message",
-      });
-    }
+    setTimeout(() => {
+      setButtonText("Envoi.");
+    }, 300);
+    setTimeout(() => {
+      setButtonText("Envoi..");
+    }, 600);
+    setTimeout(() => {
+      setButtonText("Envoi...");
+    }, 900);
+    setTimeout(() => {
+      setButtonText("Message envoyé !");
+    }, 1000);
   };
 
   return (
@@ -57,11 +49,7 @@ function Contact() {
           </Col>
           <Col md={6}>
             <h2>Rentrons en contact</h2>
-            <form
-              name="contact"
-              method="post"
-              // onSubmit={handleSubmit}
-            >
+            <form name="contact" method="post" onSubmit={handleSubmit}>
               <Row>
                 <Col sm={6} className="px-1">
                   <input type="hidden" name="form-name" value="contact" />
