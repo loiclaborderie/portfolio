@@ -6,6 +6,8 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/astronaut.png";
 import { useEffect } from "react";
 import { useState } from "react";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -49,21 +51,35 @@ function Banner() {
       <Container fluid>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Bienvenue sur mon portfolio</span>
-            <h1>
-              {`Loic Laborderie - `}
-              <p className="wrap">Développeur {text}</p>
-            </h1>
-            <p className="description">
-              Développeur web junior avec une passion pour la création de sites
-              web intuitifs et une forte volonté d'apprendre et d'évoluer dans
-              le domaine.
-            </p>
-            <button>
-              <a href="#connect">
-                Me contacter <ArrowRightCircle size={25} />
-              </a>
-            </button>
+            <TrackVisibility once>
+              {({ isVisible }) =>
+                isVisible && (
+                  <div
+                    className={
+                      isVisible
+                        ? "animate__animated animate__zoomInUp animate__delay-2s animate__slow"
+                        : ""
+                    }
+                  >
+                    <span className="tagline">Bienvenue sur mon portfolio</span>
+                    <h1>
+                      {`Loic Laborderie - `}
+                      <p className="wrap">Développeur {text}</p>
+                    </h1>
+                    <p className="description">
+                      Développeur web junior avec une passion pour la création
+                      de sites web intuitifs et une forte volonté d'apprendre et
+                      d'évoluer dans le domaine.
+                    </p>
+                    <button>
+                      <a href="#connect">
+                        Me contacter <ArrowRightCircle size={25} />
+                      </a>
+                    </button>
+                  </div>
+                )
+              }
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="header-img" />

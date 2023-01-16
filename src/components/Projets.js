@@ -10,6 +10,8 @@ import projImg1 from "../assets/img/projImg1.png";
 import projImg2 from "../assets/img/projImg2.png";
 import projImg3 from "../assets/img/projImg3.png";
 import projImg4 from "../assets/img/projImg4.png";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 function Projets() {
   const projets = [
@@ -39,7 +41,21 @@ function Projets() {
       <Container fluid>
         <Row>
           <Col>
-            <h2>Projets</h2>
+            <TrackVisibility once>
+              {({ isVisible }) =>
+                isVisible && (
+                  <div
+                    className={
+                      isVisible
+                        ? "animate__animated animate__fadeInDown animate__fast"
+                        : ""
+                    }
+                  >
+                    <h2>Projets</h2>
+                  </div>
+                )
+              }
+            </TrackVisibility>
             {/* <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
               repellat error cupiditate corrupti hic, tempore saepe laborum quas
