@@ -12,7 +12,9 @@ function ProjetCard({ imageUrl, description, titre, liens }) {
       </a>
     </div>
   ) : (
-    <p>Ce projet n'est pas en public</p>
+    <div className="lien-github">
+      <p>Ce projet n'est pas en public</p>
+    </div>
   );
   const displaySite = liens.site ? (
     <div className="lien-site">
@@ -22,7 +24,9 @@ function ProjetCard({ imageUrl, description, titre, liens }) {
       </a>
     </div>
   ) : (
-    <p>Ce projet n'est pas hébergé</p>
+    <div className="lien-site">
+      <p>Ce projet n'est pas hébergé</p>
+    </div>
   );
 
   return (
