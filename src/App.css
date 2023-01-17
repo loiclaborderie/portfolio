@@ -473,8 +473,6 @@ p.wrap {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 90%;
-  margin: 0 auto;
 }
 .project-liens img {
   width: 2rem;
