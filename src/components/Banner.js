@@ -57,7 +57,7 @@ function Banner() {
                   <div
                     className={
                       isVisible
-                        ? "animate__animated animate__zoomInUp animate__delay-2s animate__slow"
+                        ? "animate__animated animate__zoomInUp animate__delay-1s animate__slow"
                         : ""
                     }
                   >
