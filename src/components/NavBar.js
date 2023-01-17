@@ -78,11 +78,11 @@ function NavBar() {
               <img src={navIcon3} alt="icone" />
             </a>
           </div>
-          <button>
-            <a id="contactConnect" href="#connect">
-              Me contacter
-            </a>
-          </button>
+          <a id="contactConnect" href="#connect">
+            <button>
+              <span>Me contacter</span>
+            </button>
+          </a>
         </span>
       </Container>
     </Navbar>

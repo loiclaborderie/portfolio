@@ -159,7 +159,7 @@ span.navbar-text {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button:hover #contactConnect {
+.navbar-text button:hover {
   color: #121212;
 }
 .navbar-text button:hover::before {
