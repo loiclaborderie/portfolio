@@ -74,6 +74,11 @@ nav.navbar.scrolled {
 }
 .navbar-brand img {
   max-width: 80%;
+  transform: scale(0.9);
+  transition: 0.3s ease-in-out;
+}
+.navbar-brand img:hover {
+  transform: scale(1);
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   color: #fff;
