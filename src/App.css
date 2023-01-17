@@ -70,10 +70,10 @@ nav.navbar.scrolled {
   background-color: #121212 !important;
 }
 .navbar-brand {
-  width: max(10%, 60px);
+  width: max(8%, 50px);
 }
 .navbar-brand img {
-  width: 100%;
+  max-width: 80%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   color: #fff;
@@ -463,6 +463,27 @@ p.wrap {
   right: 0;
   z-index: -4;
 }
+.project-liens {
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.project-liens img {
+  width: 2rem;
+  padding-bottom: 1rem;
+  opacity: 0.8;
+}
+.project-liens a {
+  text-decoration: none;
+}
+.project-liens span {
+  display: block;
+  color: white;
+  font-weight: 600;
+}
 
 /* Fonts */
 
@@ -610,7 +631,7 @@ p.wrap {
 }
 
 .footer .logo {
-  width: 26%;
+  width: 15%;
 }
 .footer p {
   text-align: center;

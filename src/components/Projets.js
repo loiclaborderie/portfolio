@@ -19,23 +19,40 @@ function Projets() {
       titre: "Marvel Quizzz",
       description: "Développement React",
       imageUrl: projImg4,
+      liens: {
+        github: "https://github.com/loiclaborderie/marvel-app",
+        site: "https://marvel-quizzz.web.app/",
+      },
     },
     {
       titre: "Calculatrice",
       description: "Design et Développement",
       imageUrl: projImg3,
+      liens: {
+        github: "https://github.com/loiclaborderie/calculator-app-main",
+        site: "https://calculator-app-main-virid.vercel.app/",
+      },
     },
     {
       titre: "Vêtus - En cours de développement",
       description: "Design et Développement PHP",
       imageUrl: projImg1,
+      liens: {
+        github: "",
+        site: "",
+      },
     },
     {
       titre: "Copie du site Instrument",
       description: "Design et Développement",
       imageUrl: projImg2,
+      liens: {
+        github: "https://github.com/loiclaborderie/instrument---Copy",
+        site: "",
+      },
     },
   ];
+
   return (
     <section className="projects" id="projects">
       <Container fluid>

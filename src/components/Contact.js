@@ -82,6 +82,7 @@ function Contact() {
                 </Col>
                 <Col sm={6} className="px-1">
                   <input
+                    required
                     name="email"
                     type="email"
                     value={formDetails.email}
@@ -100,6 +101,7 @@ function Contact() {
                 </Col>
                 <Col>
                   <textarea
+                    required
                     name="message"
                     rows="6"
                     value={formDetails.message}
