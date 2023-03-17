@@ -34,12 +34,12 @@ function Projets() {
       },
     },
     {
-      titre: "Vêtus - En cours de développement",
-      description: "Design et Développement PHP",
+      titre: "Vêtu",
+      description: "Design Développement API REST PHP/Symfony et Angular",
       imageUrl: projImg1,
       liens: {
-        github: "",
-        site: "",
+        github: "https://github.com/loiclaborderie/VetuV2",
+        site: "https://vetu-v2.vercel.app/",
       },
     },
     {
@@ -61,13 +61,7 @@ function Projets() {
             <TrackVisibility once>
               {({ isVisible }) =>
                 isVisible && (
-                  <div
-                    className={
-                      isVisible
-                        ? "animate__animated animate__fadeInDown animate__fast"
-                        : ""
-                    }
-                  >
+                  <div className={isVisible ? "animate__animated animate__fadeInDown animate__fast" : ""}>
                     <h2>Projets</h2>
                   </div>
                 )
@@ -80,10 +74,7 @@ function Projets() {
               nisi! Iure quisquam voluptates ullam!
             </p> */}
             <Tab.Container id="project-tabs" defaultActiveKey="first">
-              <Nav
-                className="justify-content-center align-center mb-5"
-                activeKey="/home"
-              >
+              <Nav className="justify-content-center align-center mb-5" activeKey="/home">
                 <Nav.Item>
                   <Nav.Link eventKey="first">Tab 1</Nav.Link>
                 </Nav.Item>
@@ -117,11 +108,7 @@ function Projets() {
           </Col>
         </Row>
       </Container>
-      <img
-        src={colorSharp2}
-        className="background-image-right"
-        alt="image-background"
-      />
+      <img src={colorSharp2} className="background-image-right" alt="image-background" />
     </section>
   );
 }
