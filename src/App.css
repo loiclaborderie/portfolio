@@ -405,6 +405,9 @@ p.wrap {
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
+.projects .projet {
+  width: 100%;
+}
 
 .proj-imgbx::before {
   content: "";
