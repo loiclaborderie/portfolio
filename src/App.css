@@ -168,20 +168,6 @@ span.navbar-text {
   position: absolute;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-link.navbar-link {
-    display: none;
-  }
-  .footer .col-sm-6 {
-    display: flex;
-    justify-content: center;
-    padding-block: 1rem;
-  }
-  .footer .social-icons > * {
-    padding-inline: 1rem;
-  }
-}
-
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
@@ -404,9 +390,6 @@ p.wrap {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 1.5rem;
-}
-.projects .projet {
-  width: 100%;
 }
 
 .proj-imgbx::before {
@@ -697,3 +680,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 } */
+
+@media (max-width: 768px) {
+  .nav-link.navbar-link {
+    display: none;
+  }
+  .footer .col-sm-6 {
+    display: flex;
+    justify-content: center;
+    padding-block: 1rem;
+  }
+  .footer .social-icons > * {
+    padding-inline: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #projects .projet {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #projects .projet {
+    width: 100%;
+  }
+}
