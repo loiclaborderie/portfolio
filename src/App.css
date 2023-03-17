@@ -418,7 +418,7 @@ p.wrap {
 .proj-imgbx:hover::before {
   height: 100%;
 }
-.proj-imgbx img {
+.proj-imgbx img.main-img {
   object-fit: cover;
   width: 100%;
   aspect-ratio: 16/9;

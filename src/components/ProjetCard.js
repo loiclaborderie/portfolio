@@ -32,7 +32,7 @@ function ProjetCard({ imageUrl, description, titre, liens }) {
   return (
     <Col md={6} className="projet">
       <div className="proj-imgbx">
-        <img src={imageUrl} alt="image projet" />
+        <img className="main-img" src={imageUrl} alt="image projet" />
         <div className="projet-txt">
           <h4>{titre}</h4>
           <span>{description}</span>
