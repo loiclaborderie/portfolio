@@ -6,7 +6,7 @@ import site from "../assets/img/site.svg";
 function ProjetCard({ imageUrl, description, titre, liens }) {
   const displayGithub = liens.github ? (
     <div className="lien-github">
-      <a href={liens.github}>
+      <a target={"_blank"} href={liens.github}>
         <img src={navIcon3}></img>
         <span>Le code</span>
       </a>
@@ -18,7 +18,7 @@ function ProjetCard({ imageUrl, description, titre, liens }) {
   );
   const displaySite = liens.site ? (
     <div className="lien-site">
-      <a href={liens.site}>
+      <a target={"_blank"} href={liens.site}>
         <img src={site}></img>
         <span>Le site</span>
       </a>
