@@ -42,18 +42,10 @@ function Competences() {
             <div className="skill-box">
               <h2>Compétences</h2>
               <p>
-                Voici mes compétences actuelles, j'ai une forte volonté
-                d'apprendre de nouvelles technologies et compétences pour
-                devenir un développeur web compétent.
+                Voici mes compétences actuelles, j'ai une forte volonté d'apprendre de nouvelles technologies et compétences pour devenir un
+                développeur web compétent.
               </p>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="skill-slider"
-                autoPlay={true}
-                autoPlaySpeed={3000}
-                keyBoardControl={true}
-              >
+              <Carousel responsive={responsive} infinite={true} className="skill-slider" autoPlay={true} autoPlaySpeed={3000} keyBoardControl={true}>
                 <div className="item">
                   <img src={html} alt="Image" />
                   <h5>HTML</h5>
@@ -91,7 +83,7 @@ function Competences() {
           </Col>
         </Row>
       </Container>
-      <img class="background-image-left" src={colorSharp} alt="" />
+      <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   );
 }

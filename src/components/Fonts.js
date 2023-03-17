@@ -7,24 +7,19 @@ function Fonts() {
     <section id="fonts">
       <Container fluid>
         <div id="text">
-          <div class="line">
-            <p class="word">Loic</p>
-            <p class="word">Laborderie</p>
+          <div className="line">
+            <p className="word">Loic</p>
+            <p className="word">Laborderie</p>
           </div>
-          <div class="line">
-            <p class="word">front-end</p>
-            <p class="word">&</p>
-            <p class="word">php</p>
+          <div className="line">
+            <p className="word">front-end</p>
+            <p className="word">&</p>
+            <p className="word">php</p>
           </div>
-          <div class="line">
-            <p class="word">voir</p>
-            <p class="word">mon</p>
-            <a
-              class="word fancy"
-              id="github"
-              href="https://github.com/loiclaborderie"
-              target="_blank"
-            >
+          <div className="line">
+            <p className="word">voir</p>
+            <p className="word">mon</p>
+            <a className="word fancy" id="github" href="https://github.com/loiclaborderie" target="_blank">
               <span className="letter">g</span>
               <span className="letter">i</span>
               <span className="letter">t</span>
@@ -33,24 +28,15 @@ function Fonts() {
               <span className="letter">b</span>
             </a>
           </div>
-          <div class="line">
-            <a
-              class="word fancy"
-              id="mail"
-              href="mailto:loiclaborderie@gmail.com"
-            >
+          <div className="line">
+            <a className="word fancy" id="mail" href="mailto:loiclaborderie@gmail.com">
               <span className="letter">e</span>
               <span className="letter">m</span>
               <span className="letter">a</span>
               <span className="letter">i</span>
               <span className="letter">l</span>
             </a>
-            <a
-              class="word fancy"
-              id="linkedin"
-              href="https://www.linkedin.com/in/loic-laborderie-465422153/"
-              target="_blank"
-            >
+            <a className="word fancy" id="linkedin" href="https://www.linkedin.com/in/loic-laborderie-465422153/" target="_blank">
               <span className="letter">l</span>
               <span className="letter">i</span>
               <span className="letter">n</span>
@@ -63,11 +49,7 @@ function Fonts() {
           </div>
         </div>
       </Container>
-      <img
-        src={colorSharp3}
-        className="background-image-two"
-        alt="image-background"
-      />
+      <img src={colorSharp3} className="background-image-two" alt="image-background" />
     </section>
   );
 }

@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Tab from "react-bootstrap/Tab";
 import ProjetCard from "./ProjetCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from "../assets/img/projImg1.png";
+import projImg1 from "../assets/img/vetu.png";
 import projImg2 from "../assets/img/projImg2.png";
 import projImg3 from "../assets/img/projImg3.png";
 import projImg4 from "../assets/img/projImg4.png";
